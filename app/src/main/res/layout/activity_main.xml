@@ -3,46 +3,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center_horizontal">
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/tvDbStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="Database Status: Initializing..."
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnInsertDummy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Insert Dummy Contact"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:text="Insert Dummy Contact" />
 
     <Button
         android:id="@+id/btnClearDb"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Clear Database"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:text="Clear Database" />
 
     <TextView
         android:id="@+id/tvContactsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="8dp"
         android:text="Contacts List:"
         android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_gravity="start"
-        android:layout_marginBottom="8dp" />
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1">
 
         <TextView
@@ -52,5 +52,11 @@
             android:text="No contacts in database."
             android:textSize="14sp" />
     </ScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 
 </LinearLayout>
